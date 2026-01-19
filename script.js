@@ -507,7 +507,7 @@ class UIManager {
         const utterance = new SpeechSynthesisUtterance();
         
         // বাংলা টেক্সট
-        const text = `পরবর্তী রোগী ${patientName}, টোকেন নম্বর ${token}, রুম নম্বর ${room} এ আসুন।`;
+        const text = ` ${patientName}, টোকেন নম্বর ${token}, ${room} নম্বর রুমে প্রবেশ করুন।`;
         utterance.text = text;
         utterance.lang = 'bn-BD';
         utterance.rate = settings.audioSpeed || 1;
